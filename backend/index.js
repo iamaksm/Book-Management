@@ -8,11 +8,11 @@ const Books = require('./Books');
 app.use(express.json());
 app.use(cors());
 dotenv.config();
-const mongoURI = process.env.MONGO_URI;
+const mongo_URI = process.env.MONGO_URI;
 // MongoDB connection
 (async () => {
     try {
-        await mongoose.connect(mongoURI, {
+        await mongoose.connect(mongo_URI, {
         });
         console.log("MongoDB connected");
     } catch (err) {
