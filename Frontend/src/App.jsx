@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import List from './Components/List';
 import Update from './Components/Update';
-import Add from './Components/add';
+import add from './Components/add';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<List />} />
-          <Route path="/create" element={<Add/>} />
+          <Route path="/create" element={<add/>} />
           <Route path="/Update/:id" element={<Update />} />
 
         </Routes>
