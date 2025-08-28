@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Navigate, useNavigate,Link } from 'react-router-dom'
 export default function List() {
     const [books,setbooks] = useState([])
-    const API_URL = 'http://localhost:3001/books'
+    const API_URL = 'https://book-management-1-al1j.onrender.com/books'
     const navigate = useNavigate()
 
    const handleDelete = async (id) => {
