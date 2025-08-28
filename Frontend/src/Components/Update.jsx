@@ -10,7 +10,7 @@ const navigate = useNavigate()
     author:"",
     year:""
   })
-  const API_URL= "http://localhost:3001/books";
+  const API_URL= "https://book-management-1-al1j.onrender.com/books";
   const {id} = useParams()
 
   useEffect(()=>{
