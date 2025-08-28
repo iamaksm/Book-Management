@@ -13,7 +13,7 @@ export default function Add() {
   const navigate = useNavigate()
   const handleSubmit = async(e)=>{
       e.preventDefault()
-      await axios.post('http://localhost:3001/books',formData)
+      await axios.post('https://book-management-1-al1j.onrender.com/books',formData)
 
       alert("Book added Successfully")
       navigate("/")
